@@ -27,7 +27,7 @@ npm install
 npm run dev
 
 Este frontend se conecta con el backend ubicado en:
-https://github.com/atianaPinzonR/dashboard-backend 
+https://github.com/TatianaPinzonR/dashboard-backend 
 
 
 ## 🎥 Vista previa
