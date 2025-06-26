@@ -1,12 +1,30 @@
-# React + Vite
+# Health Dashboard V2 - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es el frontend del proyecto **Health Dashboard**, desarrollado con **React + Vite**. Permite visualizar estadísticas de salud, operaciones y clientes, mediante gráficos, tablas, filtros interactivos y carga de archivos Excel.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- [React 18](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Mantine UI](https://mantine.dev/)
+- [React Router DOM](https://reactrouter.com/)
+- [Axios](https://axios-http.com/)
+- [Chart.js + react-chartjs-2](https://www.chartjs.org/)
+- [xlsx](https://sheetjs.com/) (para manejo de archivos Excel)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Instalación y uso
+
+
+```bash
+# Instalar dependencias
+npm install
+
+# Iniciar en modo desarrollo
+npm run dev
+
+Este frontend se conecta con el backend ubicado en:
+https://github.com/atianaPinzonR/health-dashboard-backend 
