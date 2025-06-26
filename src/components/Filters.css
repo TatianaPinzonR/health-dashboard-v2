@@ -1,0 +1,22 @@
+.filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color:#121212 ;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    justify-content: flex-start;
+}
+
+.filter-group {
+    flex: 1 1 220px;
+    min-width: 200px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #FFFFFF;
+}

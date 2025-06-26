@@ -1,0 +1,22 @@
+.charts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.chart-block {
+    background-color: #121212;
+    padding: 1.5rem;
+    border-radius: 12px;
+    flex: 1 1 500px;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.chart-block h3 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Argentina" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-65.0, -22.0], [-64.0, -22.0], [-64.0, -23.0],
+            [-65.0, -23.0], [-65.0, -22.0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Brazil" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-55.0, -10.0], [-54.0, -10.0], [-54.0, -11.0],
+            [-55.0, -11.0], [-55.0, -10.0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "United States of America" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-100.0, 40.0], [-99.0, 40.0], [-99.0, 39.0],
+            [-100.0, 39.0], [-100.0, 40.0]
+          ]
+        ]
+      }
+    }
+  ]
+}

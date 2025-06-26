@@ -1,0 +1,84 @@
+.tabla-container {
+    padding: 1rem;
+    background-color: #111;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.875rem; /* Letra más pequeña */
+}
+
+.tabla-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    flex-direction: row;
+}
+
+.filtro-input {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    min-width: 200px;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+}
+
+.descargar-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+}
+
+.descargar-btn:hover {
+    background-color: #2563eb;
+}
+
+.tabla-registros {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1a1a1a;
+}
+
+.tabla-registros th,
+.tabla-registros td {
+    border: 1px solid #333;
+    padding: 6px 10px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.tabla-registros th {
+    background-color: #222;
+    font-weight: 600;
+}
+
+.tabla-registros tr:nth-child(even) {
+    background-color: #181818;
+}
+
+.paginacion {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.paginacion button {
+    background-color: #3b82f6;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.paginacion button:hover {
+    background-color: #2563eb;
+}

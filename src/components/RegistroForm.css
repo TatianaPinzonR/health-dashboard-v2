@@ -1,0 +1,65 @@
+/* src/components/RegistroForm.css */
+
+.formulario-registro {
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 320px;
+    margin-top: 10px;
+}
+
+.encabezado-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.encabezado-form h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.cerrar-btn {
+    background-color: #272727;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: #1e1e1e;
+    color: white;
+    font-size: 0.95rem;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    background-color: #2a2a2a;
+}
+
+.guardar-btn {
+    width: 100%;
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.guardar-btn:hover {
+    background-color: #2563eb;
+}
