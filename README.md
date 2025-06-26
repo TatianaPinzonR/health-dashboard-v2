@@ -29,4 +29,3 @@ npm run dev
 Este frontend se conecta con el backend ubicado en:
 https://github.com/atianaPinzonR/dashboard-backend 
 
-![image](https://github.com/user-attachments/assets/9de2ad8f-3d04-45f6-b5a1-2f9001355b4b)
