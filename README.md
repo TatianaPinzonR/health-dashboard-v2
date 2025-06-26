@@ -31,9 +31,10 @@ https://github.com/TatianaPinzonR/dashboard-backend
 
 
 ## 🎥 Vista previa
+![Vista previa](./login.png)
+![Vista previa](./dashboard.png)
+![Vista previa](./registros.png)
+![Vista previa](./estadisticas.png)
 
-[![Ver demo en Vimeo](https://raw.githubusercontent.com/TatianaPinzonR/dashboard-frontend/main/preview.png)](https://vimeo.com/1096759240)
-
-> Haz clic en la imagen para ver la demo del sistema en Vimeo.
 
 
