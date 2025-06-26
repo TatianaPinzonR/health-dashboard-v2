@@ -32,7 +32,8 @@ https://github.com/atianaPinzonR/dashboard-backend
 
 ## 🎥 Vista previa
 
-[![Ver demo en Vimeo](https://vimeo.com/1096759240?share=copy)
+[![Ver demo en Vimeo](https://raw.githubusercontent.com/TatianaPinzonR/dashboard-frontend/main/preview.png)](https://vimeo.com/1096759240)
 
 > Haz clic en la imagen para ver la demo del sistema en Vimeo.
+
 
