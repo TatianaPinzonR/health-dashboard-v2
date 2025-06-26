@@ -29,3 +29,10 @@ npm run dev
 Este frontend se conecta con el backend ubicado en:
 https://github.com/atianaPinzonR/dashboard-backend 
 
+
+## 🎥 Vista previa
+
+[![Ver demo en Vimeo](https://vimeo.com/1096759240?share=copy)
+
+> Haz clic en la imagen para ver la demo del sistema en Vimeo.
+
