@@ -19,7 +19,6 @@ Este es el frontend del proyecto **Health Dashboard**, desarrollado con **React 
 ## 📦 Instalación y uso
 
 
-```bash
 # Instalar dependencias
 npm install
 
@@ -31,10 +30,19 @@ https://github.com/TatianaPinzonR/dashboard-backend
 
 
 ## 🎥 Vista previa
-![Vista previa](./login.png)
-![Vista previa](./dashboard.png)
-![Vista previa](./registros.png)
-![Vista previa](./estadisticas.png)
+
+### 🔐 Login
+![Login](./login.png)
+
+### 📊 Dashboard
+![Dashboard](./dashboard.png)
+
+### 📋 Registros
+![Registros](./registros.png)
+
+### 📈 Estadísticas
+![Estadísticas](./estadisticas.png)
+
 
 
 
