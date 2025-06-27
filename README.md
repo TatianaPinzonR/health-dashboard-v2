@@ -16,20 +16,20 @@ Este es el frontend del proyecto **Health Dashboard**, desarrollado con **React 
 
 ---
 
-## 📦 Instalación y uso
+# 📦 Instalación y uso
 
 
-# Instalar dependencias
+## Instalar dependencias
 npm install
 
-# Iniciar en modo desarrollo
+## Iniciar en modo desarrollo
 npm run dev
 
 Este frontend se conecta con el backend ubicado en:
 https://github.com/TatianaPinzonR/dashboard-backend 
 
 
-## 🎥 Vista previa
+# 🎥 Vista previa
 
 ### 🔐 Login
 ![Login](./login.png)
