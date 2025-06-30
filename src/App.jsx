@@ -5,23 +5,46 @@ import Dashboard from './components/Dashboard';
 import Registros from './pages/Registros';
 import Graficos from './pages/Graficos';
 import Login from "./pages/Login";
+import PrivateRoute from "./components/PrivateRoute";
+import { useUser } from "./context/UserContext";
 
 export default function App() {
-    const renderLayout = (component) => (
-        <div className="container-scroller">
-            <Sidebar />
-            <div className="container-fluid page-body-wrapper">
-                {component}
-            </div>
-        </div>
-    );
+    const { user } = useUser();
 
     return (
-        <Routes>
-            <Route path="/login" element={<Login />} />
-            <Route path="/" element={renderLayout(<Dashboard />)} />
-            <Route path="/registros" element={renderLayout(<Registros />)} />
-            <Route path="/graficos" element={renderLayout(<Graficos />)} />
-        </Routes>
+        <div className="container-scroller">
+            {user && <Sidebar />}
+
+            <div className="container-fluid page-body-wrapper">
+                <Routes>
+                    <Route path="/login" element={<Login />} />
+
+                    <Route
+                        path="/"
+                        element={
+                            <PrivateRoute>
+                                <Dashboard />
+                            </PrivateRoute>
+                        }
+                    />
+                    <Route
+                        path="/registros"
+                        element={
+                            <PrivateRoute>
+                                <Registros />
+                            </PrivateRoute>
+                        }
+                    />
+                    <Route
+                        path="/graficos"
+                        element={
+                            <PrivateRoute>
+                                <Graficos />
+                            </PrivateRoute>
+                        }
+                    />
+                </Routes>
+            </div>
+        </div>
     );
 }

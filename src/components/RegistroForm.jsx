@@ -1,57 +1,113 @@
 // src/components/RegistroForm.jsx
-import React, { useState } from 'react';
-import './RegistroForm.css';
+import React, { useState } from "react";
+import "./RegistroForm.css";
 
-const RegistroForm = ({ onGuardar }) => {
-    const [formulario, setFormulario] = useState({
-        pais: '',
-        anio: '',
-        enfermedad: '',
-        genero: '',
-        mortalidad: '',
-        recuperacion: '',
-        poblacion: '',
+const RegistroForm = ({ onAdd }) => {
+    const [formVisible, setFormVisible] = useState(true);
+    const [nuevoRegistro, setNuevoRegistro] = useState({
+        pais: "",
+        año: "",
+        enfermedad: "",
+        genero: "",
+        mortalidad: "",
+        recuperacion: "",
+        poblacion: "",
     });
 
-    const manejarCambio = (e) => {
-        const { name, value } = e.target;
-        setFormulario({ ...formulario, [name]: value });
+    const handleChange = (e) => {
+        setNuevoRegistro({
+            ...nuevoRegistro,
+            [e.target.name]: e.target.value,
+        });
     };
 
-    const manejarSubmit = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        if (Object.values(formulario).some((campo) => campo.trim() === '')) {
-            alert('Por favor, completa todos los campos');
-            return;
-        }
-        onGuardar(formulario);
-        setFormulario({
-            pais: '',
-            anio: '',
-            enfermedad: '',
-            genero: '',
-            mortalidad: '',
-            recuperacion: '',
-            poblacion: '',
+        if (Object.values(nuevoRegistro).some((v) => v === "")) return;
+        onAdd(nuevoRegistro);
+        setNuevoRegistro({
+            pais: "",
+            año: "",
+            enfermedad: "",
+            genero: "",
+            mortalidad: "",
+            recuperacion: "",
+            poblacion: "",
         });
     };
 
     return (
-        <div className="formulario-registro">
-            <h2>Agregar Nuevo Registro</h2>
-            <form onSubmit={manejarSubmit}>
-                <input type="text" name="pais" placeholder="País" value={formulario.pais} onChange={manejarCambio} />
-                <input type="number" name="anio" placeholder="Año" value={formulario.anio} onChange={manejarCambio} />
-                <input type="text" name="enfermedad" placeholder="Enfermedad" value={formulario.enfermedad} onChange={manejarCambio} />
-                <input type="text" name="genero" placeholder="Género" value={formulario.genero} onChange={manejarCambio} />
-                <input type="number" step="0.01" name="mortalidad" placeholder="Mortalidad (%)" value={formulario.mortalidad} onChange={manejarCambio} />
-                <input type="number" step="0.01" name="recuperacion" placeholder="Recuperación (%)" value={formulario.recuperacion} onChange={manejarCambio} />
-                <input type="number" name="poblacion" placeholder="Población afectada" value={formulario.poblacion} onChange={manejarCambio} />
+        <div className="registro-form-container">
+            <div className="form-header">
+                <h2>Agregar Nuevo Registro</h2>
+                <button
+                    className="toggle-btn"
+                    onClick={() => setFormVisible((prev) => !prev)}
+                    title={formVisible ? "Ocultar formulario" : "Mostrar formulario"}
+                >
+                    {formVisible ? "−" : "+"}
+                </button>
+            </div>
 
-                <button type="submit" className="guardar-btn">Guardar</button>
-            </form>
+            {formVisible && (
+                <form onSubmit={handleSubmit} className="registro-form">
+                    <input
+                        type="text"
+                        name="pais"
+                        placeholder="País"
+                        value={nuevoRegistro.pais}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type="text"
+                        name="año"
+                        placeholder="Año"
+                        value={nuevoRegistro.año}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type="text"
+                        name="enfermedad"
+                        placeholder="Enfermedad"
+                        value={nuevoRegistro.enfermedad}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type="text"
+                        name="genero"
+                        placeholder="Género"
+                        value={nuevoRegistro.genero}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type="number"
+                        step="any"
+                        name="mortalidad"
+                        placeholder="Mortalidad (%)"
+                        value={nuevoRegistro.mortalidad}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type="number"
+                        step="any"
+                        name="recuperacion"
+                        placeholder="Recuperación (%)"
+                        value={nuevoRegistro.recuperacion}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type="number"
+                        name="poblacion"
+                        placeholder="Población afectada"
+                        value={nuevoRegistro.poblacion}
+                        onChange={handleChange}
+                    />
+                    <button type="submit">Guardar</button>
+                </form>
+            )}
         </div>
     );
 };
 
 export default RegistroForm;
+

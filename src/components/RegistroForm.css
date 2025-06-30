@@ -63,3 +63,58 @@ form input:focus {
 .guardar-btn:hover {
     background-color: #2563eb;
 }
+
+/* src/components/RegistroForm.css */
+.registro-form-container {
+    background-color: #141414;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.toggle-btn {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #2563eb;
+}
+
+.registro-form input,
+.registro-form button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: white;
+}
+
+.registro-form button {
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.registro-form button:hover {
+    background-color: #038b14;
+}
